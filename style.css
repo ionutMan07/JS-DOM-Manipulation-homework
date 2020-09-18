@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#bar {
+  background-color: blueviolet;
+ 
+}
+
+.containerone {
+  margin: 60px auto;
+  max-width: 600px;
+}
+
+.containertwo{
+  display: flex;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+img {
+  max-width: 260px;
+  width: 100%;
+  margin-left: 10px;
+}
+
+
+#userinput {
+  margin-top: 10px;
+  width: 400 px;
+}
+
+#btn {
+  color: white;
+  background-color: blue;
+  border-radius: 3px;
+  
+}
+
+#labelid {
+  margin-top: 10px;
+}
