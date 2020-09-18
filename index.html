@@ -8,29 +8,32 @@
 </head>
 <body>
   <div class="containerone">
-    <div id="bar">
-     <p>Thank you for contacting us, Alexandra!<span> X</span></p> 
-    </div> <br>
-    <div class="containertwo">
-    <div class="gigi">
-      <form action="">
-      <input type="text" id="userinput" placeholder="First Name" size="35"> <br>
-      <input type="text" id="userinput" placeholder="Last Name" size="35"> <br>
-      <label for="" id="labelid">Gender <br>
-        <input type="radio">M  <br>
-        <input type="radio">F  <br>
-      </label> <br>
-      <textarea name="" id="usertext" cols="35" rows="6" placeholder="Your message here"></textarea> <br>
-      <button id="btn">
-        Submmit
-      </button>
-    </div>
-      <div>
-        <img src="/img.png" alt="">
+      <div class="bar" >
+        <p>Thank you for contacting us, <span id="username"></span><span><button> X</button> </span></p> 
+      </div> <br>
+      <div class="containertwo">
+        <div class="gigi">
+              <form onsubmit="return validate()" action="">
+                  <input type="text" id="firstuserinput" placeholder="First Name" size="35"> <br>
+                  <input type="text" id="seconduserinput" placeholder="Last Name" size="35"> <br>
+                <p>Gender</p> 
+                  <label> 
+                    <input type="radio" id="Men" name="Gender" value="M" >M<br>
+                  </label> 
+                  <label> 
+                    <input type="radio" id="Woman" name="Gender" value="F" >F<br>
+                  </label> <br>
+                <textarea name="" id="usertext" cols="35" rows="6" placeholder="Your message here"></textarea> <br>
+                  <button id="btn">
+                    Submmit
+                  </button>
+          </div>
+              </form>
+          <div>
+            <img src="/img.png" alt="">
+          </div>
+      
       </div>
-    </form>
-  
-  </div>
   </div>
 </body>
 <script src="/app.js"></script>

@@ -9,9 +9,9 @@ body {
   margin: 0 auto;
 }
 
-#bar {
+.bar {
   background-color: blueviolet;
- 
+  display: none;
 }
 
 .containerone {
@@ -32,9 +32,9 @@ img {
 }
 
 
-#userinput {
+#seconduserinput {
   margin-top: 10px;
-  width: 400 px;
+ 
 }
 
 #btn {
@@ -45,5 +45,5 @@ img {
 }
 
 #labelid {
-  margin-top: 10px;
+  margin-top: 100px;
 }
