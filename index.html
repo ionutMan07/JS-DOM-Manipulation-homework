@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <title>Contact form</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <div class="containerone">
       <div class="bar" >
-        <p>Thank you for contacting us, <span id="username"></span><span><button> X</button> </span></p> 
+        <p><i style='font-size:16px' class='far'>&#xf058;</i>    Thank you for contacting us, <span id="username"></span><span><button> X</button> </span></p> 
       </div> <br>
-      <div class="containertwo">
-        <div class="gigi">
-              <form onsubmit="return validate()" action="">
-                  <input type="text" id="firstuserinput" placeholder="First Name" size="35"> <br>
-                  <input type="text" id="seconduserinput" placeholder="Last Name" size="35"> <br>
+      <div class='container'>
+              <form>
+                  <input type="text" id="firstuserinput" placeholder="First Name" size="35"><br>
+
+                  <input type="text" id="seconduserinput" placeholder="Last Name" size="35"><br>
                 <p>Gender</p> 
                   <label> 
                     <input type="radio" id="Men" name="Gender" value="M" >M<br>
@@ -23,17 +23,13 @@
                   <label> 
                     <input type="radio" id="Woman" name="Gender" value="F" >F<br>
                   </label> <br>
-                <textarea name="" id="usertext" cols="35" rows="6" placeholder="Your message here"></textarea> <br>
+                <textarea name="" id="usertext" cols="33" rows="6" placeholder="Your message here"></textarea> <br>
                   <button id="btn">
-                    Submmit
+                    Submit
                   </button>
-          </div>
               </form>
-          <div>
-            <img src="/img.png" alt="">
+            <img src="contact.jpg" alt="">
           </div>
-      
-      </div>
   </div>
 </body>
 <script src="/app.js"></script>
