@@ -5,15 +5,17 @@ body {
 }
 
 .bar {
+  color : #428b43;
   width: 640px;
   margin: 0px auto;
   margin-top: 100px;
   background-color: #def0d8;
+  padding: 5px;
   /* display: none; */
 }
 
 .container{
-  margin: 60px auto;
+  margin: 0px auto;
   max-width: 600px;
   display: flex;
   border: 1px solid black;
@@ -34,8 +36,14 @@ img {
   height: 100%;
   margin-left: 20px;
 }
+#close{
+  float: right;
+  background-color: #def0d8 ;
+  border: none;
+  color:  #428b43;
+  cursor: pointer;
 
-
+}
 #btn {
   margin : 5px;
   float: right;
@@ -43,6 +51,7 @@ img {
   color: white;
   background-color: #0790ab;
   border-radius: 3px;
+  cursor: pointer;
   
 }
 
