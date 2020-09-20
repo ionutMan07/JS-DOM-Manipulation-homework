@@ -9,28 +9,21 @@
 </head>
 <body>
       <div class="bar" >
-        <p><i style='font-size:16px' class='far'>&#xf058;</i> Thank you for contacting us, <span id="username"></span><span><button id = 'close'> X </button> </span></p> 
+        <p><i class="far">&#xf058;</i> Thank you for contacting us, <span id="username"></span><span><button id = "close"> X </button> </span></p> 
       </div> <br>
-      <div class='container'>
-              <form>
-                  <input type="text" id="firstuserinput" placeholder="First Name" size="35"><br>
-
-                  <input type="text" id="seconduserinput" placeholder="Last Name" size="35"><br>
-                <p>Gender</p> 
-                  <label> 
-                    <input type="radio" id="Men" name="Gender" value="M" >M<br>
-                  </label> 
-                  <label> 
-                    <input type="radio" id="Woman" name="Gender" value="F" >F<br>
-                  </label> <br>
-                <textarea name="" id="usertext" cols="33" rows="6" placeholder="Your message here"></textarea> <br>
-                  <button id="btn">
-                    Submit
-                  </button>
-              </form>
-            <img src="contact.jpg" alt="">
-          </div>
-  </div>
+      <div class="container">
+        <form id= 'form'>
+          <input type="text" id="firstuserinput" placeholder="First Name" size="35" onkeyup="check()"><br>
+          <input type="text" id="seconduserinput" placeholder="Last Name" size="35" onkeyup="check()"><br>
+          <p>Gender</p> 
+          <label><input type="radio" id="Men" name="Gender" value="M" > M<br></label> 
+          <label><input type="radio" id="Woman" name="Gender" value="F" > F<br></label><br>
+          <textarea id="usertext" cols="33" rows="6" placeholder="Your message here" onkeyup="check()"></textarea><br>    
+          
+        </form>
+        <img src="contact.jpg" alt="">
+        <button id="btn">Submit</button>
+      </div>
 </body>
 <script src="/app.js"></script>
 </html>
