@@ -42,6 +42,7 @@ img {
 }
 #close{
   float: right;
+  border-radius: 50%;
   background-color: #def0d8 ;
   border: none;
   color:  #428b43;

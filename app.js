@@ -5,6 +5,8 @@
     var genderM = document.getElementById('men').checked;
     var genderF = document.getElementById('woman').checked;
     var usertext = document.getElementById('usertext').value;
+    var form = {firstName, secondName, genderM, genderF, usertext};
+
     if (firstName === ''){
         document.getElementById('firstuserinput').classList.add('redBorder');
     }else if (secondName === ''){
@@ -20,7 +22,7 @@
         document.querySelector('#username').innerText = firstName;
         document.getElementById('form').reset();
         document.getElementById('gender').style.color = 'black';
-        console.log(` First name: ${firstName}\n SecondName: ${secondName}\n Usermessage: ${usertext}`);
+        console.log(form);
     }
 }
  var check = function(){
@@ -33,5 +35,6 @@
 
 var btn = document.getElementById('btn');
 btn.addEventListener('click', validate);
-var closeBtn = document.getElementById('close');
-closeBtn.addEventListener('click', function(){window.location.reload()});
+
+var closeBtn = document.getElementById('close'); 
+closeBtn.addEventListener('click', function(){window.location.reload()}); //closes the message popup and refreshes the page
