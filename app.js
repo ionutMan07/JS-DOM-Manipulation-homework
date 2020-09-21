@@ -7,7 +7,7 @@
     var usertext = document.getElementById('usertext').value;
     var form = {firstName, secondName, genderM, genderF, usertext};
 
-    if (firstName === ''){
+    if (firstName === '') {
         document.getElementById('firstuserinput').classList.add('redBorder');
     }else if (secondName === ''){
         document.getElementById('seconduserinput').classList.add('redBorder');
